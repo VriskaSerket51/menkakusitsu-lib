@@ -9,5 +9,6 @@ export interface SpecialroomInfo {
     when: number,
 };
 
-export * from "./request";
-export * from "./response";
+export * from "./apply";
+export * from "./attendance";
+export * from "./info";
