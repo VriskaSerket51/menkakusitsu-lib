@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Menkakusitsu/webserver-lib.git"
+    "url": "git+https://github.com/Menkakusitsu/menkakusitsu-lib.git"
   },
   "author": "VriskaSerket51",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Menkakusitsu/webserver-lib/issues"
+    "url": "https://github.com/Menkakusitsu/menkakusitsu-lib/issues"
   },
-  "homepage": "https://github.com/Menkakusitsu/webserver-lib#readme",
+  "homepage": "https://github.com/Menkakusitsu/menkakusitsu-lib#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
