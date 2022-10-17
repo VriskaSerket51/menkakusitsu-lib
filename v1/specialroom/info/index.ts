@@ -3,8 +3,8 @@ import { DefaultResponse } from "../../..";
 
 export interface GetInfoRequest extends DefaultResponse {}
 
-export interface PutInfoResponse extends DefaultResponse {
-    information: SpecialroomInfo;
+export interface GetInfoResponse extends DefaultResponse {
+    information: SpecialroomInfo[];
 }
 
 export interface PutInfoRequest extends DefaultResponse {
