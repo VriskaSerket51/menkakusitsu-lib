@@ -1,4 +1,4 @@
-import { SpecialroomInfo } from "..";
+import { SpecialroomInfo, StudentInfo } from "..";
 import { DefaultResponse } from "../../..";
 
 export interface GetApplyRequest {
@@ -11,7 +11,7 @@ export interface GetApplyResponse extends DefaultResponse {
 
 export interface PostApplyRequest {
     teacherUid: number,
-    applicants: string,
+    applicants: StudentInfo[],
     location: string,
     purpose: string,
     when: number,
