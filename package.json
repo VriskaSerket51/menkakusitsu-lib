@@ -21,5 +21,9 @@
   "files": [
     "dist",
     "lib"
-  ]
+  ],
+  "dependencies": {
+    "g": "^2.0.1",
+    "typescript": "^4.8.4"
+  }
 }
