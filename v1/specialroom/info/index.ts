@@ -8,11 +8,11 @@ export interface GetInfoResponse extends DefaultResponse {
 }
 
 export interface PutInfoRequest {
-    information: SpecialroomInfo;
+    information: SpecialroomInfo[];
 }
 
 export interface PutInfoResponse extends DefaultResponse {
-    information: SpecialroomInfo;
+    information: SpecialroomInfo[];
 }
 
 export interface LocationInfo {
