@@ -1,20 +1,20 @@
 {
-  "name": "@menkakusitsu/menkakusitsu-lib",
-  "version": "1.0.10",
+  "name": "@common-jshs/menkakusitsu-lib",
+  "version": "1.0.0",
   "description": "Library for Menkakusitsu data transfer",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Menkakusitsu/menkakusitsu-lib.git"
+    "url": "git+https://github.com/COMMON-Jshs/menkakusitsu-lib.git"
   },
   "author": "VriskaSerket51",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Menkakusitsu/menkakusitsu-lib/issues"
+    "url": "https://github.com/COMMON-Jshs/menkakusitsu-lib/issues"
   },
-  "homepage": "https://github.com/Menkakusitsu/menkakusitsu-lib#readme",
+  "homepage": "https://github.com/COMMON-Jshs/menkakusitsu-lib#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
