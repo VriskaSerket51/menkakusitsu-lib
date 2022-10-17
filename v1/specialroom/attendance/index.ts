@@ -8,6 +8,7 @@ export interface GetAttendanceInfoResponse extends DefaultResponse {
 };
 
 export interface GetAttendanceListRequest {
+    when: number,
 };
 
 export interface GetAttendanceListResponse extends DefaultResponse {
