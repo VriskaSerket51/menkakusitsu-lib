@@ -1,8 +1,10 @@
+import { StudentInfo, TeacherInfo } from "./info";
+
 export interface SpecialroomInfo {
     applyId: number,
     state: number,
-    master: string,
-    teacher: string,
+    master: StudentInfo,
+    teacher: TeacherInfo,
     applicants: string,
     location: string,
     purpose: string,
