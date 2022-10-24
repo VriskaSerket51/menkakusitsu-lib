@@ -18,7 +18,7 @@ export interface PostApplyRequest {
 };
 
 export interface PostApplyResponse extends DefaultResponse {
-    specialroomInfo: SpecialroomInfo,
+    // specialroomInfo: SpecialroomInfo,
 };
 
 export interface DeleteApplyRequest {
@@ -26,5 +26,5 @@ export interface DeleteApplyRequest {
 };
 
 export interface DeleteApplyResponse extends DefaultResponse {
-    specialroomInfo: SpecialroomInfo,
+    // specialroomInfo: SpecialroomInfo,
 };
