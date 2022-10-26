@@ -10,7 +10,7 @@ export interface TimetableCell {
 }
 
 export interface GetTimetableRequest {
-    when: Date;
+    when: string;
 }
 
 export interface GetTimetableResponse extends DefaultResponse {
