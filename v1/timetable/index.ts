@@ -18,6 +18,7 @@ export interface GetTimetableResponse extends DefaultResponse {
 }
 
 export interface PutTimetableRequest {
+    when: string;
     timetableInfo: TimetableCell[];
 }
 
