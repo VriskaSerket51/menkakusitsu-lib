@@ -1,5 +1,6 @@
 import { SpecialroomInfo } from "..";
 import { DefaultResponse } from "../../..";
+import { UserInfo } from "../../user";
 
 export interface GetInfoRequest {}
 
@@ -37,26 +38,14 @@ export interface GetPurposeInfoResponse extends DefaultResponse {
     purposeInfo: PurposeInfo[];
 }
 
-export interface StudentInfo {
-    uid: number;
-    value: string;
-    name: string;
-}
-
 export interface GetStudentInfoRequest {}
 
 export interface GetStudentInfoResponse extends DefaultResponse {
-    studentInfo: StudentInfo[];
-}
-
-export interface TeacherInfo {
-    uid: number;
-    value: string;
-    name: string;
+    studentInfo: UserInfo[];
 }
 
 export interface GetTeacherInfoRequest {}
 
 export interface GetTeacherInfoResponse extends DefaultResponse {
-    teacherInfo: TeacherInfo[];
+    teacherInfo: UserInfo[];
 }
