@@ -20,6 +20,7 @@ export interface BbsComment {
 export interface GetBbsPostListRequest {
     postPage: number;
     postListSize: number;
+    postCount: number;
 }
 
 export interface GetBbsPostListResponse extends DefaultResponse {
@@ -54,6 +55,7 @@ export interface DeleteBbsPostResponse extends DefaultResponse {
 export interface GetBbsCommentListRequest {
     commentPage: number;
     commentListSize: number;
+    commentCount: number;
 }
 
 export interface GetBbsCommentListResponse extends DefaultResponse {
