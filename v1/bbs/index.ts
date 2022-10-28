@@ -7,6 +7,7 @@ export interface BbsPost {
     title: string;
     content: string;
     postType: number;
+    commentCount: number;
     createdDate: string;
 }
 
