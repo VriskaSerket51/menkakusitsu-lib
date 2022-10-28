@@ -53,6 +53,7 @@ export interface DeleteBbsPostResponse extends DefaultResponse {
 }
 
 export interface GetBbsCommentListRequest {
+    postId: number;
     commentPage: number;
     commentListSize: number;
     commentCount: number;
@@ -63,6 +64,7 @@ export interface GetBbsCommentListResponse extends DefaultResponse {
 }
 
 export interface PostBbsCommentRequest {
+    postId: number;
     content: string;
 }
 
