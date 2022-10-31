@@ -48,6 +48,7 @@ export interface PostBbsPostResponse extends DefaultResponse {
 }
 
 export interface PutBbsPostRequest {
+    postId: number;
     title?: string;
     content?: string;
     header?: string;
