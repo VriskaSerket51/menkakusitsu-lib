@@ -45,12 +45,27 @@ export interface PostBbsPostResponse extends DefaultResponse {
     post?: BbsPost;
 }
 
+export interface PutBbsPostRequest {
+    title?: string;
+    content: string;
+}
+
+export interface PutBbsPostResponse extends DefaultResponse {
+    post?: BbsPost;
+}
+
 export interface DeleteBbsPostRequest {
     id: number;
 }
 
 export interface DeleteBbsPostResponse extends DefaultResponse {
     post?: BbsPost;
+}
+
+export interface GetBbsPostHeaderRequest {}
+
+export interface GetBbsPostHeaderResponse extends DefaultResponse {
+    headers: string[];
 }
 
 export interface GetBbsCommentListRequest {
