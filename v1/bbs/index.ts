@@ -6,6 +6,7 @@ export interface BbsPost {
     owner: UserInfo;
     title: string;
     content: string;
+    header: string;
     postType: number;
     commentCount: number;
     createdDate: string;
