@@ -39,6 +39,7 @@ export interface GetBbsPostResponse extends DefaultResponse {
 export interface PostBbsPostRequest {
     title: string;
     content: string;
+    header: string;
 }
 
 export interface PostBbsPostResponse extends DefaultResponse {
@@ -47,7 +48,8 @@ export interface PostBbsPostResponse extends DefaultResponse {
 
 export interface PutBbsPostRequest {
     title?: string;
-    content: string;
+    content?: string;
+    header?: string;
 }
 
 export interface PutBbsPostResponse extends DefaultResponse {
