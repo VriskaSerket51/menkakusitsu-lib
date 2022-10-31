@@ -7,6 +7,7 @@ export interface BbsPost {
     title: string;
     content: string;
     header: string;
+    board: string;
     postType: number;
     commentCount: number;
     createdDate: string;
@@ -20,6 +21,7 @@ export interface BbsComment {
 }
 
 export interface GetBbsPostListRequest {
+    board: string;
     postPage: number;
     postListSize: number;
 }
@@ -30,7 +32,8 @@ export interface GetBbsPostListResponse extends DefaultResponse {
 }
 
 export interface GetBbsPostRequest {
-    id: number;
+    board: string;
+    postId: number;
 }
 
 export interface GetBbsPostResponse extends DefaultResponse {
@@ -41,6 +44,7 @@ export interface PostBbsPostRequest {
     title: string;
     content: string;
     header: string;
+    board: string;
 }
 
 export interface PostBbsPostResponse extends DefaultResponse {
@@ -48,6 +52,7 @@ export interface PostBbsPostResponse extends DefaultResponse {
 }
 
 export interface PutBbsPostRequest {
+    board: string;
     postId: number;
     title?: string;
     content?: string;
@@ -59,20 +64,24 @@ export interface PutBbsPostResponse extends DefaultResponse {
 }
 
 export interface DeleteBbsPostRequest {
-    id: number;
+    board: string;
+    postI: number;
 }
 
 export interface DeleteBbsPostResponse extends DefaultResponse {
     post?: BbsPost;
 }
 
-export interface GetBbsPostHeaderRequest {}
+export interface GetBbsPostHeaderRequest {
+    board: string;
+}
 
 export interface GetBbsPostHeaderResponse extends DefaultResponse {
     headers: string[];
 }
 
 export interface GetBbsCommentListRequest {
+    board: string;
     postId: number;
     commentPage: number;
     commentListSize: number;
@@ -84,6 +93,7 @@ export interface GetBbsCommentListResponse extends DefaultResponse {
 }
 
 export interface PostBbsCommentRequest {
+    board: string;
     postId: number;
     content: string;
 }
@@ -93,7 +103,9 @@ export interface PostBbsCommentResponse extends DefaultResponse {
 }
 
 export interface DeleteBbsCommentRequest {
-    id: number;
+    board: string;
+    postId: number;
+    commentId: number;
 }
 
 export interface DeleteBbsCommentResponse extends DefaultResponse {
