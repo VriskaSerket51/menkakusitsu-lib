@@ -1,5 +1,16 @@
 import { DefaultResponse } from "../..";
 
+export interface PostRegisterRequest {
+    id: string;
+    name: string;
+    email: string;
+    password: string;
+}
+
+export interface PostRegisterResponse extends DefaultResponse {
+    uid?: number;
+}
+
 export interface PostLoginRequest {
     id: string;
     password: string;
@@ -21,3 +32,10 @@ export interface PostRefreshResponse extends DefaultResponse {
     accessToken: string;
     refreshToken: string;
 }
+
+export interface PutForgotPasswordRequest {
+    id: string;
+    email: string;
+}
+
+export interface PutForgotPasswordResponse extends DefaultResponse {}
