@@ -65,7 +65,7 @@ export interface PutBbsPostResponse extends DefaultResponse {
 
 export interface DeleteBbsPostRequest {
     board: string;
-    postI: number;
+    postId: number;
 }
 
 export interface DeleteBbsPostResponse extends DefaultResponse {

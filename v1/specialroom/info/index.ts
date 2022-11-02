@@ -21,6 +21,14 @@ export interface LocationInfo {
     value: string;
 }
 
+export interface GetManagerRequest {
+    when: string;
+}
+
+export interface GetManagerResponse extends DefaultResponse {
+    manager: UserInfo;
+}
+
 export interface GetLocationInfoRequest {}
 
 export interface GetLocationInfoResponse extends DefaultResponse {
