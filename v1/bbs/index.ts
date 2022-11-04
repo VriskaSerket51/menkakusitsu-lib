@@ -48,7 +48,7 @@ export interface PostBbsPostRequest {
 }
 
 export interface PostBbsPostResponse extends DefaultResponse {
-    post?: BbsPost;
+    postId: number;
 }
 
 export interface PutBbsPostRequest {
@@ -59,18 +59,14 @@ export interface PutBbsPostRequest {
     header?: string;
 }
 
-export interface PutBbsPostResponse extends DefaultResponse {
-    post?: BbsPost;
-}
+export interface PutBbsPostResponse extends DefaultResponse {}
 
 export interface DeleteBbsPostRequest {
     board: string;
     postId: number;
 }
 
-export interface DeleteBbsPostResponse extends DefaultResponse {
-    post?: BbsPost;
-}
+export interface DeleteBbsPostResponse extends DefaultResponse {}
 
 export interface GetBbsPostHeaderRequest {
     board: string;
@@ -99,7 +95,7 @@ export interface PostBbsCommentRequest {
 }
 
 export interface PostBbsCommentResponse extends DefaultResponse {
-    comment?: BbsComment;
+    commentId: number;
 }
 
 export interface DeleteBbsCommentRequest {
@@ -109,5 +105,4 @@ export interface DeleteBbsCommentRequest {
 }
 
 export interface DeleteBbsCommentResponse extends DefaultResponse {
-    comment?: BbsComment;
 }
