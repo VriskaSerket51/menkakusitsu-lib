@@ -1,4 +1,5 @@
 import { DefaultResponse } from "../..";
+import { FileInfo } from "../files";
 import { UserInfo } from "../user";
 
 export interface BbsPost {
@@ -38,6 +39,7 @@ export interface GetBbsPostRequest {
 
 export interface GetBbsPostResponse extends DefaultResponse {
     post: BbsPost;
+    attachments?: FileInfo[];
 }
 
 export interface PostBbsPostRequest {
@@ -104,5 +106,4 @@ export interface DeleteBbsCommentRequest {
     commentId: number;
 }
 
-export interface DeleteBbsCommentResponse extends DefaultResponse {
-}
+export interface DeleteBbsCommentResponse extends DefaultResponse {}
