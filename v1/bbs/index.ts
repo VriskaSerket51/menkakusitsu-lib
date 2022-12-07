@@ -47,6 +47,7 @@ export interface PostBbsPostRequest {
     content: string;
     header: string;
     board: string;
+    isPublic: boolean;
 }
 
 export interface PostBbsPostResponse extends DefaultResponse {
@@ -59,6 +60,7 @@ export interface PutBbsPostRequest {
     title?: string;
     content?: string;
     header?: string;
+    isPublic?: boolean;
 }
 
 export interface PutBbsPostResponse extends DefaultResponse {}
