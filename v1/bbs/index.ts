@@ -12,6 +12,7 @@ export interface BbsPost {
     postType: number;
     commentCount: number;
     createdDate: string;
+    isPublic: boolean;
 }
 
 export interface BbsComment {
