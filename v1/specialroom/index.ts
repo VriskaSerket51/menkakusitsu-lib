@@ -1,10 +1,10 @@
-import { StudentInfo, TeacherInfo } from "./info";
+import { UserInfo } from "../user";
 
 export interface SpecialroomInfo {
     applyId: number,
     state: number,
-    master: StudentInfo,
-    teacher: TeacherInfo,
+    master: UserInfo,
+    teacher: UserInfo,
     applicants: string,
     location: string,
     purpose: string,
@@ -14,3 +14,4 @@ export interface SpecialroomInfo {
 export * from "./apply";
 export * from "./attendance";
 export * from "./info";
+export * from "./outer";
