@@ -1,25 +1,25 @@
 {
-  "name": "@common-jshs/menkakusitsu-lib",
-  "version": "1.6.4",
-  "description": "Library for Menkakusitsu data transfer",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/COMMON-Jshs/menkakusitsu-lib.git"
-  },
-  "author": "VriskaSerket51",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/COMMON-Jshs/menkakusitsu-lib/issues"
-  },
-  "homepage": "https://github.com/COMMON-Jshs/menkakusitsu-lib#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "dependencies": {
-    "g": "^2.0.1",
-    "typescript": "^4.8.4"
-  }
+    "name": "@common-jshs/menkakusitsu-lib",
+    "version": "1.6.5",
+    "description": "Library for Menkakusitsu data transfer",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/COMMON-Jshs/menkakusitsu-lib.git"
+    },
+    "author": "VriskaSerket51",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/COMMON-Jshs/menkakusitsu-lib/issues"
+    },
+    "homepage": "https://github.com/COMMON-Jshs/menkakusitsu-lib#readme",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
+    "dependencies": {
+        "typescript": "^4.8.4"
+    }
 }
