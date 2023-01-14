@@ -2,13 +2,14 @@ import { DefaultResponse } from "../..";
 
 export interface PostRegisterRequest {
     id: string;
+    sid: number;
     name: string;
     email: string;
     password: string;
 }
 
 export interface PostRegisterResponse extends DefaultResponse {
-    uid?: number;
+    // uid?: number;
 }
 
 export interface PostLoginRequest {
