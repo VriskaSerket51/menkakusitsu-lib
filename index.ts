@@ -10,7 +10,7 @@ export enum Permission {
     Dev = 100,
 }
 
-export type UserInfo = {
+export type TokenPayload = {
     uid: number;
     id: string;
     permission: number;
