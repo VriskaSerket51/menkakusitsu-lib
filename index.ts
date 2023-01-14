@@ -3,15 +3,15 @@ export interface DefaultResponse {
     message: string;
 }
 
-export enum Permission {
-    Guest = 0,
-    Student = 1,
-    Teacher = 2,
-    Dev = 100,
-}
-
-export type TokenPayload = {
-    uid: number;
-    id: string;
-    permission: number;
+export const Permission = {
+    Guest: 0,
+    Student: 1,
+    Teacher: 2,
+    Dev: 100,
 };
+
+export class TokenPayload {
+    public uid: number = 0;
+    public id: string = "";
+    public permission: number = 0;
+}
