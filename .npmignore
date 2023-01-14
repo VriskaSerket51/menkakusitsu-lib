@@ -1,3 +1,2 @@
 .npmrc
-examples/
-node_modules/
+lib/
