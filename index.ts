@@ -14,4 +14,8 @@ export class TokenPayload {
     public uid: number = 0;
     public id: string = "";
     public permission: number = 0;
+
+    hasPermission(permission: number) {
+        return this.permission >= permission;
+    }
 }
