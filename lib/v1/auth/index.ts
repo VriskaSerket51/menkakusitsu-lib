@@ -12,6 +12,14 @@ export interface PostRegisterResponse extends DefaultResponse {
     // uid?: number;
 }
 
+export interface DeleteSecessionRequest {
+    uid?: number;
+    id?: number;
+    name?: number;
+}
+
+export interface DeleteSecessionResponse extends DefaultResponse {}
+
 export interface PostLoginRequest {
     id: string;
     password: string;
