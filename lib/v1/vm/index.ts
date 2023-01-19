@@ -1,49 +1,52 @@
 import { DefaultResponse } from "../..";
 
-export interface PostCreateVmRequest {
-    required: CreateVmConfig;
-    optional: VmConfig;
+export interface RequiredVmConfig {
+    core: number;
+    ramSize: number;
+    diskSize: number;
+    bios: string;
 }
 
-export interface PostCreateVmResponse extends DefaultResponse {
-    vmId: number;
-    config: {
-        config0: CreateVmConfig;
-        config1: VmConfig;
-    }
-}
-
-export interface RemoveVM {
-    id: number;
-}
-
-export interface CreateVmConfig {
-    id?: number;
-    core?: number;
-    ramSize?: number;
-    diskSize?: number;
-}
-export interface VmConfig {
+export interface OptionalVmConfig {
     name?: string;
     acpi?: boolean;
-    core?: number;
-    cputype?: string;
-    ramSize?: number; //MiB
+    cpuType?: string;
     diskController?: string;
     customArgs?: string[];
     audio?: string;
-    autostart?: boolean;
-    bios: string;
+    autoStart?: boolean;
     kvm?: boolean;
     machine?: string;
     net?: string;
     ostype?: string;
     tablet?: boolean;
     vga?: string;
-    vncport?: number;
+    vncPort?: number;
 }
 
-export interface GetGpuAttach {
+export interface VmConfig {
+    required: RequiredVmConfig;
+    optional: OptionalVmConfig;
+}
+
+export interface PostCreateVmRequest {
+    config: VmConfig;
+}
+
+export interface PostCreateVmResponse extends DefaultResponse {
+    vmId: number;
+    config: VmConfig;
+}
+
+export interface DeleteRemoveVmRequest {
+    id: number;
+}
+
+export interface DeleteRemoveVmResponse extends DefaultResponse {}
+
+export interface GetGpuAttachRequest {
     id: number;
     type?: string;
 }
+
+export interface GetGpuAttachResponse extends DefaultResponse {}

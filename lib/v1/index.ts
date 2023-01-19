@@ -6,3 +6,4 @@ export * from "./meal";
 export * from "./specialroom";
 export * from "./timetable";
 export * from "./user";
+export * from "./vm";
