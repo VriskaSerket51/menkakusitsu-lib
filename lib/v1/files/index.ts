@@ -1,8 +1,8 @@
 import { UserInfo } from "../user";
 
 export interface FileInfo {
-    owne: UserInfo;
+    owner: UserInfo;
     fileName: string;
     downloadLink: string;
-    isImage: boolean;
+    mimeType: string;
 }
