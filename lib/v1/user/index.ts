@@ -39,10 +39,21 @@ export interface PutPasswordResponse extends DefaultResponse {
     newPassword: string;
 }
 
-export interface GetUserNameFromTokenRequest {
+export interface PostUserNameFromTokenRequest {
     token: string;
 }
 
-export interface GetUserNameFromTokenResponse extends DefaultResponse { }
+export interface PostUserNameFromTokenResponse extends DefaultResponse {
+    name: string;
+}
+
+export interface PostChangeUserNameRequest {
+    token: string;
+    name: string;
+}
+
+export interface PostChangeUserNameResponse {
+    name: string;
+}
 
 export * from "./push"
