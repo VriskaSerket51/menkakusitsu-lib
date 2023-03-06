@@ -15,7 +15,7 @@ export interface UserPrivateInfo {
     password?: string;
 }
 
-export interface GetMyPrivateInfoRequest {}
+export interface GetMyPrivateInfoRequest { }
 
 export interface GetMyPrivateInfoResponse extends DefaultResponse {
     private: UserPrivateInfo;
@@ -39,10 +39,10 @@ export interface PutPasswordResponse extends DefaultResponse {
     newPassword: string;
 }
 
-export interface GetUserNameFromTokenRequest{
+export interface GetUserNameFromTokenRequest {
     token: string;
 }
 
-export interface GetUserNameFromTokenResponse extends DefaultResponse{}
+export interface GetUserNameFromTokenResponse extends DefaultResponse { }
 
 export * from "./push"
