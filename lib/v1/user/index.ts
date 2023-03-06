@@ -45,4 +45,4 @@ export interface GetUserNameFromTokenRequest{
 
 export interface GetUserNameFromTokenResponse extends DefaultResponse{}
 
-export * from "./push";
+export * from "./push"
