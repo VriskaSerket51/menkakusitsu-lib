@@ -4,6 +4,7 @@ export * from "./chat";
 export * from "./files";
 export * from "./meal";
 export * from "./specialroom";
+export * from "./outer";
 export * from "./timetable";
 export * from "./user";
 export * from "./vm";
