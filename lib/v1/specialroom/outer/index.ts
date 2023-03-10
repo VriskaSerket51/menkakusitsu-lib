@@ -7,6 +7,7 @@ export interface OuterStudentInfo {
     until?: number;
 }
 
+
 export interface OuterInfo {
     applyId: number,
     state: number,
@@ -18,12 +19,29 @@ export interface OuterInfo {
     when: number,
 };
 
+export interface PostOuterRequest {
+    teacherUid: number,
+    applicants: UserInfo[],
+    location: string,
+    purpose: string,
+};
+
+
 export interface GetOuterStudentInfoRequest {
 }
 
 export interface GetOuterStudentInfoResponse extends DefaultResponse {
-    outerStudentInfo: OuterStudentInfo[];
+    outerStudentInfo: String[];
 }
+
+export interface GetAttendanceListRequest {
+    when: number;
+}
+
+export interface GetAttendanceListResponse extends DefaultResponse {
+    info: string[][];
+}
+
 
 export interface PostOuterStudentInfoRequest {
     outerStudentInfo: OuterStudentInfo;
