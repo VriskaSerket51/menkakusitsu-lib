@@ -7,6 +7,17 @@ export interface OuterStudentInfo {
     until?: number;
 }
 
+export interface OuterInfo {
+    applyId: number,
+    state: number,
+    master: UserInfo,
+    teacher: UserInfo,
+    applicants: string,
+    location: string,
+    purpose: string,
+    when: number,
+};
+
 export interface GetOuterStudentInfoRequest {
 }
 
