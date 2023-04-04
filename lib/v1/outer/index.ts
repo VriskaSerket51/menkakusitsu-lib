@@ -7,7 +7,7 @@ export interface OuterInfo {
     teacher: UserInfo,
     applicants: string,
     location: string,
-    purpose: string,
+    purpose:  string,
     when: number,
 };
 

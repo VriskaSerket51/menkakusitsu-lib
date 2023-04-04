@@ -5,7 +5,7 @@ export interface RequiredVmConfig {
     ramSize: number;
     diskSize: number;
     bios: string;
-}
+};
 
 export interface OptionalVmConfig {
     name?: string;
@@ -22,31 +22,31 @@ export interface OptionalVmConfig {
     tablet?: boolean;
     vga?: string;
     vncPort?: number;
-}
+};
 
 export interface VmConfig {
     required: RequiredVmConfig;
     optional: OptionalVmConfig;
-}
+};
 
 export interface PostCreateVmRequest {
     config: VmConfig;
-}
+};
 
 export interface PostCreateVmResponse extends DefaultResponse {
     vmId: number;
     config: VmConfig;
-}
+};
 
 export interface DeleteRemoveVmRequest {
     id: number;
-}
+};
 
-export interface DeleteRemoveVmResponse extends DefaultResponse {}
+export interface DeleteRemoveVmResponse extends DefaultResponse {};
 
 export interface GetGpuAttachRequest {
     id: number;
     type?: string;
-}
+};
 
-export interface GetGpuAttachResponse extends DefaultResponse {}
+export interface GetGpuAttachResponse extends DefaultResponse {};

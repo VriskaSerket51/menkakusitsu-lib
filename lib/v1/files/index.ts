@@ -5,4 +5,4 @@ export interface FileInfo {
     fileName: string;
     downloadLink: string;
     mimeType: string;
-}
+};

@@ -3,7 +3,7 @@ export * as v1 from "./v1";
 export interface DefaultResponse {
     status: number;
     message: string;
-}
+};
 
 export const Permission = {
     Guest: 0,
@@ -24,4 +24,4 @@ export class TokenPayload {
     hasPermission(permission: number) {
         return this.permission >= permission;
     }
-}
+};
