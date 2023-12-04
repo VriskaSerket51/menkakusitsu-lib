@@ -14,8 +14,8 @@ export interface PostRegisterResponse extends DefaultResponse {
 
 export interface DeleteSecessionRequest {
     uid?: number;
-    id?: number;
-    name?: number;
+    id?: string;
+    name?: string;
 }
 
 export interface DeleteSecessionResponse extends DefaultResponse {}
