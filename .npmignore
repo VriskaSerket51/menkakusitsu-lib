@@ -1,2 +1,4 @@
-.npmrc
 lib/
+
+.npmrc
+tsconfig.json
