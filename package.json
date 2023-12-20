@@ -1,6 +1,6 @@
 {
     "name": "@common-jshs/menkakusitsu-lib",
-    "version": "1.13.0",
+    "version": "1.13.1",
     "description": "Library for Menkakusitsu data transfer",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
