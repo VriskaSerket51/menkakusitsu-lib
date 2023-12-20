@@ -3,29 +3,29 @@ import { DefaultResponse } from "../../..";
 import { UserInfo } from "../../user";
 
 export interface GetApplyRequest {
-    when: number,
-};
+    when: number;
+}
 
 export interface GetApplyResponse extends DefaultResponse {
-    specialroomInfo: SpecialroomInfo,
-};
+    specialroomInfo: SpecialroomInfo;
+}
 
 export interface PostApplyRequest {
-    teacherUid: number,
-    applicants: UserInfo[],
-    location: string,
-    purpose: string,
-    when: number,
-};
+    teacherUid: number;
+    applicants: UserInfo[];
+    location: string;
+    purpose: string;
+    when: number;
+}
 
 export interface PostApplyResponse extends DefaultResponse {
     // specialroomInfo: SpecialroomInfo,
-};
+}
 
 export interface DeleteApplyRequest {
-    when: number,
-};
+    when: number;
+}
 
 export interface DeleteApplyResponse extends DefaultResponse {
     // specialroomInfo: SpecialroomInfo,
-};
+}

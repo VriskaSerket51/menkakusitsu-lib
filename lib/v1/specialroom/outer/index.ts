@@ -7,8 +7,7 @@ export interface OuterStudentInfo {
     until?: number;
 }
 
-export interface GetOuterStudentInfoRequest {
-}
+export interface GetOuterStudentInfoRequest {}
 
 export interface GetOuterStudentInfoResponse extends DefaultResponse {
     outerStudentInfo: OuterStudentInfo[];

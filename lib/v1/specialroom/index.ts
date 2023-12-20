@@ -1,15 +1,15 @@
 import { UserInfo } from "../user";
 
 export interface SpecialroomInfo {
-    applyId: number,
-    state: number,
-    master: UserInfo,
-    teacher: UserInfo,
-    applicants: string,
-    location: string,
-    purpose: string,
-    when: number,
-};
+    applyId: number;
+    state: number;
+    master: UserInfo;
+    teacher: UserInfo;
+    applicants: string;
+    location: string;
+    purpose: string;
+    when: number;
+}
 
 export * from "./apply";
 export * from "./attendance";
