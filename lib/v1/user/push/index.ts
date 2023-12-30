@@ -1,12 +1,14 @@
 import { DefaultResponse } from "../../..";
 
+export interface Notification {
+    title: string;
+    body: string;
+    link?: string;
+}
+
 export interface PostPushRequest {
     targetUid: number;
-    notification: {
-        title: string;
-        body: string;
-        link?: string;
-    };
+    notification: Notification;
 }
 
 export interface PostPushResponse extends DefaultResponse {}

@@ -10,9 +10,11 @@ export interface GetAttendanceListRequest {
     when: number;
 }
 
+export interface AttendanceList {
+    big: string[][];
+    small: string[][];
+}
+
 export interface GetAttendanceListResponse extends DefaultResponse {
-    list: {
-        big: string[][];
-        small: string[][];
-    };
+    list: AttendanceList;
 }
