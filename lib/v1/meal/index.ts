@@ -5,7 +5,7 @@ export interface MealInfo {
 }
 
 export interface GetMealRequest {
-    when: string;
+    // when: string;
 }
 
 export interface GetMealResponse extends DefaultResponse {
