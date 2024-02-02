@@ -1,27 +1,27 @@
 {
-    "name": "@common-jshs/menkakusitsu-lib",
-    "version": "1.14.1",
-    "description": "Library for Menkakusitsu data transfer",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "scripts": {
-        "build": "rimraf dist/ && tsc"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/VriskaSerket51/menkakusitsu-lib.git"
-    },
-    "author": "VriskaSerket51",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/VriskaSerket51/menkakusitsu-lib/issues"
-    },
-    "homepage": "https://github.com/VriskaSerket51/menkakusitsu-lib#readme",
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com"
-    },
-    "devDependencies": {
-        "typescript": "^4.9.3",
-        "rimraf": "^4.1.1"
-    }
+  "name": "@common-jshs/menkakusitsu-lib",
+  "version": "1.14.1",
+  "description": "Library for Menkakusitsu data transfer",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist/ && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VriskaSerket51/menkakusitsu-lib.git"
+  },
+  "author": "VriskaSerket51",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VriskaSerket51/menkakusitsu-lib/issues"
+  },
+  "homepage": "https://github.com/VriskaSerket51/menkakusitsu-lib#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "rimraf": "^5.0.5"
+  }
 }
