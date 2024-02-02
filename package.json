@@ -12,7 +12,7 @@
     "url": "git+https://github.com/VriskaSerket51/menkakusitsu-lib.git"
   },
   "author": "VriskaSerket51",
-  "license": "ISC",
+  "license": "GPL-3.0-only",
   "bugs": {
     "url": "https://github.com/VriskaSerket51/menkakusitsu-lib/issues"
   },
