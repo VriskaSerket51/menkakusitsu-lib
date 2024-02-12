@@ -17,9 +17,6 @@
     "url": "https://github.com/VriskaSerket51/menkakusitsu-lib/issues"
   },
   "homepage": "https://github.com/VriskaSerket51/menkakusitsu-lib#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "devDependencies": {
     "typescript": "^5.2.2",
     "rimraf": "^5.0.5"
