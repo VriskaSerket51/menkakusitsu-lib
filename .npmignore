@@ -1,4 +1,5 @@
 lib/
 
 .npmrc
+package-lock.json
 tsconfig.json
